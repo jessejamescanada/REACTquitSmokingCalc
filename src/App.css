@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0;
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 500px;
+  margin: auto;
+  
+}
+.title{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.inputComponentContainer {
+  width: auto;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.inputChildContainer {
+  display: flex;
+  flex-direction: column;
+}
+.inputChildContainer label{
+  display: block;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+.inputChildContainer input{
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #e9e9e9;
+  margin-bottom: 12px;
+}
+.topLevelDisplayContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.displayContainer {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
+}
+.iconCont {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+}
+.fa-smoking-ban {
+  display: flex;
+  color: rgb(238, 55, 55);
 }
 
-.App-link {
-  color: #61dafb;
+.btnContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  background-color: rgba(12, 143, 82, 0.589);
+}
+.btn:hover{
+  background-color: rgba(12, 143, 82, 0.342);;
+}
+.btn:focus{
+  outline: none;
+}
+.result{
+  color: rgb(238, 55, 55);
+}
+.costH2 {
+  text-align: center;
+}
+.money {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px dotted rgb(216, 216, 216);
+  width: 60%;
+}
+.daysH2 {
+}
+.clock {
+  text-align: center;
+  width: 50%;
+  border-right: 1px dotted rgb(216, 216, 216);
+}
+.notSmokedH2 {
+}
+.hashtag {
+  text-align: center;
+  width: 50%;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* media */
+
+@media(max-width: 767px){
+  .inputComponentContainer{
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .container{
+    width: 100%;
+  }
+  .inputChildContainer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .inputContainer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .btnContainer{
+    margin: auto;
+  }
+  .title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .fa-smoking-ban{
+    display: none;
+  }
+  .topLevelDisplayContainer{
+    margin-top: 25px;
+    width: 100%;
+  }
+  .displayContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+  .clock{
+    border-right: none;
+  }
+  .hashtag{
+    margin-top: 15px;
+  }
+  .money{
+    border: none;
   }
 }
