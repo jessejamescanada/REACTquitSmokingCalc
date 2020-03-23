@@ -5,6 +5,10 @@ body {
   padding: 0;
   margin: 0;
 }
+#root{
+  background-color: rgb(236, 236, 236);
+  height: 100vh;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -21,6 +25,10 @@ body {
 }
 .inputComponentContainer {
   width: auto;
+  background-color: rgb(245, 245, 245);
+  -webkit-box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
 }
 .inputContainer {
   display: flex;
@@ -132,6 +140,9 @@ input[type=date]::-webkit-inner-spin-button {
 /* media */
 
 @media(max-width: 767px){
+  #root{
+    height: 100%;
+  }
   .inputComponentContainer{
     width: 100%;
   }
