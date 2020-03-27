@@ -1,12 +1,12 @@
 import React from 'react';
-import InputComponent from './components/InputComponent'
 import './App.css';
+import InputHooks from './components/InputHooks'
 
 
 function App() {
   return (
     <div className="container">
-     <InputComponent  text={{title: 'Quit Smoking Calculator'}}/>
+     <InputHooks  text={{title: 'Quit Smoking Calculator'}} />
     </div>
   );
 }
