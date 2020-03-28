@@ -14,9 +14,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  /* width: 500px; */
   margin: auto;
-  
+  height: 100vh;
 }
 .title{
   text-align: center;
@@ -139,7 +139,7 @@ input[type=date]::-webkit-inner-spin-button {
 
 /* media */
 
-@media(max-width: 767px){
+@media(max-width: 768px){
   #root{
     height: 100%;
   }
@@ -148,6 +148,7 @@ input[type=date]::-webkit-inner-spin-button {
   }
   .container{
     width: 100%;
+    height: 100%;
   }
   .inputChildContainer{
     width: 100%;
